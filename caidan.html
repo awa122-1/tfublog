@@ -1,0 +1,443 @@
+```html
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>彩蛋 | 芙酱awa</title>
+
+    <meta
+        name="description"
+        content="你发现了一个彩蛋！"
+    >
+
+    <link
+        rel="stylesheet"
+        href="style.css"
+    >
+
+</head>
+
+
+<body>
+
+
+<!-- =====================================================
+     背景
+===================================================== -->
+
+<div class="background">
+
+    <div class="background-image"></div>
+
+    <div class="background-overlay"></div>
+
+    <div class="background-glow glow-1"></div>
+
+    <div class="background-glow glow-2"></div>
+
+</div>
+
+
+
+<!-- =====================================================
+     导航栏
+===================================================== -->
+
+<header class="navbar">
+
+    <div class="nav-container">
+
+
+        <a
+            href="index.html"
+            class="logo"
+        >
+
+            <span>&lt;</span>
+
+            芙酱awa
+
+            <span>/&gt;</span>
+
+        </a>
+
+
+
+        <nav id="nav-menu">
+
+            <a href="index.html">
+                首页
+            </a>
+
+            <a href="index.html#about">
+                关于我
+            </a>
+
+            <a href="projects.html">
+                项目
+            </a>
+
+            <a href="friends.html">
+                朋友们
+            </a>
+
+            <a href="index.html#skills">
+                没技能
+            </a>
+
+            <a href="index.html#contact">
+                别联系我
+            </a>
+
+        </nav>
+
+
+
+        <div class="nav-actions">
+
+            <button
+                id="theme-toggle"
+                aria-label="切换主题"
+                title="切换到浅色模式"
+            >
+                ☀️
+            </button>
+
+
+            <button
+                id="menu-toggle"
+                aria-label="打开菜单"
+            >
+                ☰
+            </button>
+
+        </div>
+
+    </div>
+
+</header>
+
+
+
+<!-- =====================================================
+     主内容
+===================================================== -->
+
+<main class="page-main">
+
+
+    <section class="section easter-page">
+
+
+        <!-- =================================================
+             密码页面
+        ================================================== -->
+
+        <div
+            id="password-screen"
+            class="password-screen"
+        >
+
+            <div class="password-icon">
+                🔒
+            </div>
+
+
+            <div class="section-title">
+
+                <span>
+                    ???.
+                </span>
+
+                神秘页面
+
+            </div>
+
+
+            <h1>
+                这里需要密码
+            </h1>
+
+
+            <p>
+                你似乎找到了一个不应该被发现的地方……
+            </p>
+
+
+            <p>
+                输入正确的密码才能继续。
+            </p>
+
+
+            <form
+                id="password-form"
+                class="password-form"
+            >
+
+                <input
+                    type="password"
+                    id="password-input"
+                    placeholder="输入密码..."
+                    autocomplete="off"
+                    required
+                >
+
+
+                <button
+                    type="submit"
+                    class="error-button primary"
+                >
+                    解锁
+                </button>
+
+            </form>
+
+
+            <p
+                id="password-error"
+                class="password-error"
+            >
+                密码错误，再试试看 awa
+            </p>
+
+
+            <a
+                href="index.html"
+                class="back-home"
+            >
+                ← 我还是回去吧
+            </a>
+
+        </div>
+
+
+
+        <!-- =================================================
+             彩蛋内容
+        ================================================== -->
+
+        <div
+            id="easter-content"
+            class="easter-content"
+        >
+
+
+            <div class="easter-icon">
+                🥚
+            </div>
+
+
+            <div class="section-title">
+
+                <span>
+                    ???.
+                </span>
+
+                你发现彩蛋了！
+
+            </div>
+
+
+            <h1>
+                恭喜你找到这里 awa
+            </h1>
+
+
+            <p>
+                这里本来不应该被普通人发现的……
+            </p>
+
+
+            <p>
+                看来你真的很闲 zzz。
+            </p>
+
+
+            <div class="easter-box">
+
+                <p>
+                    🎉 彩蛋解锁成功！
+                </p>
+
+                <p>
+                    <a href="https://www.bilibili.com/video/BV1dyXqBaEE5/" 
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            class="easter-button">
+                        点击我来看看吧！
+                    </a>
+                </p>
+
+                <small>
+                    芙酱awa的网站里藏着一些奇怪的东西。
+                </small>
+
+            </div>
+
+
+            <div class="easter-actions">
+
+                <a
+                    href="index.html"
+                    class="error-button primary"
+                >
+                    ← 返回首页
+                </a>
+
+
+                <button
+                    class="error-button secondary"
+                    onclick="history.back()"
+                >
+                    返回上一页
+                </button>
+
+            </div>
+
+
+        </div>
+
+
+    </section>
+
+
+</main>
+
+
+
+<!-- =====================================================
+     Footer
+===================================================== -->
+
+<footer>
+
+    <p>
+
+        Designed &amp; Built by
+
+        <a
+            href="https://space.bilibili.com/1682798870"
+            target="_blank"
+            rel="noopener noreferrer"
+        >
+            芙酱awa
+        </a>
+
+    </p>
+
+
+    <p class="copyright">
+
+        © 2026 芙酱awa
+
+        ·
+
+        Made with HTML, CSS &amp; JavaScript
+
+    </p>
+
+</footer>
+
+
+
+<!-- =====================================================
+     返回顶部
+===================================================== -->
+
+<button
+    id="back-top"
+    aria-label="返回顶部"
+>
+    ↑
+</button>
+
+
+
+<!-- =====================================================
+     JavaScript
+===================================================== -->
+
+<script src="script.js"></script>
+
+
+<script>
+
+/* =====================================================
+   彩蛋密码
+===================================================== */
+
+const correctPassword = "Tfujiang";
+
+
+const passwordScreen =
+    document.getElementById("password-screen");
+
+const easterContent =
+    document.getElementById("easter-content");
+
+const passwordForm =
+    document.getElementById("password-form");
+
+const passwordInput =
+    document.getElementById("password-input");
+
+const passwordError =
+    document.getElementById("password-error");
+
+
+/* 默认隐藏彩蛋 */
+
+easterContent.style.display = "none";
+
+passwordError.style.display = "none";
+
+
+/* =====================================================
+   输入密码
+===================================================== */
+
+passwordForm.addEventListener(
+    "submit",
+    function (event) {
+
+        event.preventDefault();
+
+
+        const password =
+            passwordInput.value;
+
+
+        if (password === correctPassword) {
+
+            passwordScreen.style.display = "none";
+
+            easterContent.style.display = "block";
+
+        } else {
+
+            passwordError.style.display = "block";
+
+            passwordInput.value = "";
+
+            passwordInput.focus();
+
+        }
+
+    }
+);
+
+</script>
+
+
+</body>
+
+</html>
+```

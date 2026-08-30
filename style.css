@@ -2933,6 +2933,531 @@ footer a:hover {
     }
 
 }
+/* =====================================================
+   404 页面
+===================================================== */
+
+.error-page {
+    min-height: calc(100vh - 180px);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.error-content {
+    width: 100%;
+}
+
+
+/* 图片 + 文字横向排列 */
+
+.error-main {
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 55px;
+
+    max-width: 950px;
+
+    margin: 0 auto;
+
+    padding: 40px;
+}
+
+
+/* 404 图片 */
+
+.error-image-link {
+    flex-shrink: 0;
+
+    display: block;
+
+    width: 360px;
+
+    border-radius: 20px;
+
+    overflow: hidden;
+
+    border: 1px solid var(--border);
+
+    box-shadow:
+        0 25px 70px
+        rgba(0, 0, 0, 0.25);
+
+    transition:
+        transform 0.25s ease,
+        box-shadow 0.25s ease;
+}
+
+
+.error-image-link:hover {
+    transform: translateY(-6px);
+
+    box-shadow:
+        0 30px 80px
+        rgba(0, 0, 0, 0.35);
+}
+
+
+.error-image {
+    width: 100%;
+
+    height: auto;
+
+    display: block;
+}
+
+
+/* 右边文字 */
+
+.error-text {
+    flex: 1;
+
+    min-width: 0;
+}
+
+
+.error-code {
+    font-size: clamp(70px, 9vw, 120px);
+
+    font-weight: 900;
+
+    line-height: 0.9;
+
+    letter-spacing: -6px;
+
+    color: var(--accent);
+
+    margin-bottom: 20px;
+}
+
+
+.error-text h1 {
+    font-size: clamp(30px, 4vw, 48px);
+
+    line-height: 1.15;
+
+    margin-bottom: 18px;
+}
+
+
+.error-message {
+    color: var(--muted);
+
+    font-size: 15px;
+
+    line-height: 1.8;
+
+    margin-bottom: 12px;
+}
+
+
+.error-hint {
+    color: var(--muted);
+
+    opacity: 0.55;
+
+    font-size: 12px;
+
+    margin-bottom: 25px;
+}
+
+
+/* 按钮 */
+
+.error-actions {
+    display: flex;
+
+    flex-wrap: wrap;
+
+    gap: 12px;
+}
+
+
+.error-button {
+    display: inline-flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    padding: 11px 18px;
+
+    border-radius: 10px;
+
+    text-decoration: none;
+
+    font-size: 14px;
+
+    font-weight: 700;
+
+    cursor: pointer;
+
+    transition:
+        transform 0.2s ease,
+        background 0.2s ease,
+        border-color 0.2s ease;
+}
+
+
+.error-button:hover {
+    transform: translateY(-3px);
+}
+
+
+.error-button.primary {
+    background: var(--accent);
+
+    color: white;
+}
+
+
+.error-button.secondary {
+    border: 1px solid var(--border);
+
+    background: var(--card);
+
+    color: var(--text);
+}
+
+
+.error-button.secondary:hover {
+    background: var(--card-hover);
+
+    border-color:
+        rgba(155,108,255,0.5);
+}
+
+
+/* =====================================================
+   手机端
+===================================================== */
+
+@media (max-width: 800px) {
+
+    .error-page {
+        min-height: auto;
+
+        padding-top: 80px;
+
+        padding-bottom: 80px;
+    }
+
+
+    .error-main {
+        flex-direction: column;
+
+        gap: 30px;
+
+        padding: 20px;
+
+        text-align: center;
+    }
+
+
+    .error-image-link {
+        width: min(360px, 90vw);
+    }
+
+
+    .error-text {
+        width: 100%;
+    }
+
+
+    .error-code {
+        font-size: 80px;
+
+        letter-spacing: -4px;
+    }
+
+
+    .error-actions {
+        justify-content: center;
+    }
+
+}
+/* =====================================================
+   彩蛋密码页面
+===================================================== */
+
+.password-screen {
+    width: 100%;
+
+    max-width: 600px;
+
+    margin: 0 auto;
+
+    padding: 40px 20px;
+
+    text-align: center;
+}
+
+
+.password-icon {
+    font-size: 75px;
+
+    margin-bottom: 20px;
+}
+
+
+.password-screen h1 {
+    font-size: clamp(32px, 5vw, 50px);
+
+    margin: 25px 0 15px;
+}
+
+
+.password-screen > p {
+    color: var(--muted);
+
+    font-size: 15px;
+
+    line-height: 1.8;
+}
+
+
+.password-form {
+    display: flex;
+
+    justify-content: center;
+
+    gap: 10px;
+
+    margin: 30px auto 15px;
+
+    max-width: 500px;
+}
+
+
+.password-form input {
+    flex: 1;
+
+    min-width: 0;
+
+    padding: 12px 15px;
+
+    border: 1px solid var(--border);
+
+    border-radius: 10px;
+
+    outline: none;
+
+    background: var(--card);
+
+    color: var(--text);
+
+    font-size: 14px;
+
+    backdrop-filter: blur(12px);
+
+    -webkit-backdrop-filter: blur(12px);
+
+    transition:
+        border-color 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+
+.password-form input:focus {
+    border-color: var(--accent);
+
+    box-shadow:
+        0 0 0 3px
+        rgba(155,108,255,0.12);
+}
+
+
+.password-form input::placeholder {
+    color: var(--muted);
+
+    opacity: 0.7;
+}
+
+
+.password-error {
+    display: none;
+
+    color: #ff6b81 !important;
+
+    font-size: 13px !important;
+
+    margin-top: 10px;
+}
+
+
+.back-home {
+    display: inline-block;
+
+    margin-top: 20px;
+
+    color: var(--muted);
+
+    text-decoration: none;
+
+    font-size: 13px;
+
+    transition: color 0.2s ease;
+}
+
+
+.back-home:hover {
+    color: var(--accent);
+}
+
+
+/* =====================================================
+   彩蛋内容
+===================================================== */
+
+.easter-page {
+    min-height: calc(100vh - 180px);
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+}
+
+
+.easter-content {
+    width: 100%;
+
+    max-width: 700px;
+
+    margin: 0 auto;
+
+    padding: 40px 20px;
+
+    text-align: center;
+}
+
+
+.easter-icon {
+    font-size: 80px;
+
+    margin-bottom: 25px;
+
+    animation: egg-float 2s ease-in-out infinite;
+}
+
+
+@keyframes egg-float {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-10px);
+    }
+
+}
+
+
+.easter-content h1 {
+    font-size: clamp(32px, 5vw, 55px);
+
+    margin: 25px 0 15px;
+}
+
+
+.easter-content > p {
+    color: var(--muted);
+
+    font-size: 15px;
+
+    line-height: 1.8;
+}
+
+
+.easter-box {
+    margin: 30px auto;
+
+    padding: 25px;
+
+    max-width: 500px;
+
+    border: 1px solid var(--border);
+
+    border-radius: 18px;
+
+    background: var(--card);
+
+    backdrop-filter: blur(12px);
+
+    -webkit-backdrop-filter: blur(12px);
+
+    box-shadow:
+        0 20px 60px
+        rgba(0, 0, 0, 0.2);
+}
+
+
+.easter-box p {
+    margin: 0 0 8px;
+
+    color: var(--text);
+
+    font-size: 20px;
+
+    font-weight: 800;
+}
+
+
+.easter-box small {
+    color: var(--muted);
+
+    font-size: 13px;
+}
+
+
+.easter-actions {
+    display: flex;
+
+    justify-content: center;
+
+    flex-wrap: wrap;
+
+    gap: 12px;
+
+    margin-top: 25px;
+}
+
+
+/* =====================================================
+   手机端
+===================================================== */
+
+@media (max-width: 600px) {
+
+    .password-form {
+        flex-direction: column;
+    }
+
+
+    .password-form button {
+        width: 100%;
+    }
+
+
+    .password-icon {
+        font-size: 65px;
+    }
+
+
+    .easter-icon {
+        font-size: 65px;
+    }
+
+}
 
 
 
