@@ -1895,9 +1895,1044 @@ footer a:hover {
     }
 
 }
+/* =====================================================
+   朋友页面
+===================================================== */
+
+.friends-page {
+    padding-top: 140px;
+}
+
+
+/* =====================================================
+   朋友介绍
+===================================================== */
+
+.friend-introduction {
+    display: grid;
+
+    grid-template-columns:
+        230px 1fr;
+
+    gap: 45px;
+
+    align-items: center;
+
+    margin-bottom: 70px;
+}
+
+
+/* =====================================================
+   朋友头像
+===================================================== */
+
+.friend-avatar {
+    position: relative;
+
+    width: 230px;
+    height: 230px;
+
+    overflow: hidden;
+
+    border-radius: 22px;
+
+    border:
+        1px solid var(--border);
+
+    background:
+        var(--card);
+
+    backdrop-filter:
+        blur(12px);
+
+    -webkit-backdrop-filter:
+        blur(12px);
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    box-shadow:
+        0 25px 70px
+        rgba(0,0,0,0.25);
+}
+
+
+.friend-avatar img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    display: block;
+}
+
+
+.avatar-fallback {
+    position: absolute;
+
+    inset: 0;
+
+    display: none;
+
+    align-items: center;
+    justify-content: center;
+
+    font-size: 70px;
+
+    background:
+        var(--card);
+}
+
+
+.friend-avatar.avatar-error
+.avatar-fallback {
+    display: flex;
+}
 
 
 
+/* =====================================================
+   朋友介绍文字
+===================================================== */
+
+.friend-description h1 {
+    font-size:
+        clamp(38px, 5vw, 60px);
+
+    line-height: 1.1;
+
+    letter-spacing: -2px;
+
+    margin-bottom: 15px;
+}
+
+
+.friend-description p {
+    max-width: 700px;
+
+    margin-bottom: 13px;
+
+    color:
+        var(--muted);
+
+    font-size: 15px;
+}
+
+
+.friend-description strong {
+    color:
+        var(--text);
+}
+
+
+.friend-question {
+    color:
+        var(--accent) !important;
+
+    font-weight: 700;
+
+    font-size: 18px !important;
+}
+
+
+
+/* =====================================================
+   朋友标签
+===================================================== */
+
+.friend-tags {
+    display: flex;
+
+    flex-wrap: wrap;
+
+    gap: 8px;
+
+    margin-top: 22px;
+}
+
+
+.friend-tags span {
+    padding:
+        6px 11px;
+
+    border:
+        1px solid var(--border);
+
+    border-radius: 8px;
+
+    background:
+        var(--card);
+
+    color:
+        var(--accent);
+
+    font-size: 12px;
+}
+
+
+
+/* =====================================================
+   Friend Database
+===================================================== */
+
+.friends-database-title {
+    display: flex;
+
+    align-items: center;
+
+    gap: 10px;
+
+    margin-bottom: 8px;
+
+    font-size: 25px;
+
+    font-weight: 800;
+}
+
+
+.friends-database-title span {
+    font-size: 28px;
+}
+
+
+.friends-database-description {
+    margin-bottom: 30px;
+
+    color:
+        var(--muted);
+
+    font-size: 14px;
+}
+
+
+
+/* =====================================================
+   友链网格
+===================================================== */
+
+.friends-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(2, minmax(0, 1fr));
+
+    gap: 20px;
+}
+
+
+
+/* =====================================================
+   友链卡片
+===================================================== */
+
+.friend-card {
+    min-height: 105px;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 17px;
+
+    padding: 22px;
+
+    border:
+        1px solid var(--border);
+
+    border-radius: 16px;
+
+    background:
+        var(--card);
+
+    backdrop-filter:
+        blur(12px);
+
+    -webkit-backdrop-filter:
+        blur(12px);
+
+    transition:
+        transform 0.25s ease,
+        background 0.25s ease,
+        border-color 0.25s ease;
+
+    text-decoration: none;
+
+    color: inherit;
+}
+
+
+.friend-link:hover {
+    transform:
+        translateY(-6px);
+
+    background:
+        var(--card-hover);
+
+    border-color:
+        rgba(155,108,255,0.5);
+}
+
+
+
+/* =====================================================
+   友链图标
+===================================================== */
+
+.friend-icon {
+    width: 55px;
+    height: 55px;
+
+    flex-shrink: 0;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 14px;
+
+    background:
+        rgba(155,108,255,0.12);
+
+    font-size: 25px;
+}
+
+
+
+/* =====================================================
+   友链文字
+===================================================== */
+
+.friend-info {
+    min-width: 0;
+}
+
+
+.friend-info h3 {
+    font-size: 18px;
+
+    margin: 0;
+}
+
+
+.friend-info p {
+    margin:
+        3px 0 0;
+
+    color:
+        var(--muted);
+
+    font-size: 13px;
+}
+
+
+.friend-info small {
+    display: block;
+
+    margin-top: 2px;
+
+    color:
+        var(--muted);
+
+    opacity: 0.6;
+
+    font-size: 11px;
+}
+
+
+
+/* =====================================================
+   友链箭头
+===================================================== */
+
+.friend-arrow {
+    margin-left: auto;
+
+    flex-shrink: 0;
+
+    color:
+        var(--muted);
+
+    font-size: 23px;
+
+    transition:
+        color 0.2s ease,
+        transform 0.2s ease;
+}
+
+
+.friend-link:hover .friend-arrow {
+    color:
+        var(--accent);
+
+    transform:
+        translate(3px, -3px);
+}
+
+
+
+/* =====================================================
+   空槽位
+===================================================== */
+
+.empty-friend {
+    opacity: 0.45;
+
+    cursor: default;
+}
+
+
+.empty-friend:hover {
+    transform:
+        translateY(-3px);
+
+    background:
+        var(--card);
+
+    border-color:
+        var(--border);
+}
+
+
+.empty-friend .friend-arrow {
+    font-size: 22px;
+}
+
+
+
+/* =====================================================
+   手机端
+===================================================== */
+
+@media (max-width: 800px) {
+
+    .friends-page {
+        padding-top: 110px;
+    }
+
+
+    .friend-introduction {
+
+        grid-template-columns:
+            1fr;
+
+        gap: 25px;
+
+        align-items: start;
+
+    }
+
+
+    .friend-avatar {
+
+        width: 180px;
+
+        height: 180px;
+
+        margin: 0 auto;
+
+    }
+
+
+    .friend-description {
+
+        text-align: center;
+
+    }
+
+
+    .friend-description p {
+
+        margin-left: auto;
+
+        margin-right: auto;
+
+    }
+
+
+    .friend-tags {
+
+        justify-content: center;
+
+    }
+
+
+    .friends-grid {
+
+        grid-template-columns:
+            1fr;
+
+    }
+
+}
+
+
+
+/* =====================================================
+   小手机
+===================================================== */
+
+@media (max-width: 500px) {
+
+    .friend-avatar {
+
+        width: 150px;
+
+        height: 150px;
+
+    }
+
+
+    .friend-description h1 {
+
+        font-size: 38px;
+
+    }
+
+
+    .friend-card {
+
+        padding: 18px;
+
+    }
+
+}
+/* =====================================================
+   朋友页面
+===================================================== */
+
+.friends-page {
+    padding-top: 140px;
+}
+
+
+/* =====================================================
+   我的介绍
+===================================================== */
+
+.friend-introduction {
+    display: grid;
+
+    grid-template-columns: 230px 1fr;
+
+    gap: 45px;
+
+    align-items: center;
+
+    margin-bottom: 70px;
+}
+
+
+/* =====================================================
+   我的头像
+===================================================== */
+
+.friend-avatar {
+    position: relative;
+
+    width: 230px;
+    height: 230px;
+
+    overflow: hidden;
+
+    border-radius: 22px;
+
+    border: 1px solid var(--border);
+
+    background: var(--card);
+
+    backdrop-filter: blur(12px);
+
+    -webkit-backdrop-filter: blur(12px);
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    box-shadow:
+        0 25px 70px
+        rgba(0, 0, 0, 0.25);
+}
+
+
+.friend-avatar img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    display: block;
+}
+
+
+.avatar-fallback {
+    position: absolute;
+
+    inset: 0;
+
+    display: none;
+
+    align-items: center;
+
+    justify-content: center;
+
+    font-size: 70px;
+
+    background: var(--card);
+}
+
+
+.friend-avatar.avatar-error
+.avatar-fallback {
+    display: flex;
+}
+
+
+
+/* =====================================================
+   我的介绍文字
+===================================================== */
+
+.friend-description h1 {
+    font-size:
+        clamp(38px, 5vw, 60px);
+
+    line-height: 1.1;
+
+    letter-spacing: -2px;
+
+    margin-bottom: 15px;
+}
+
+
+.friend-description p {
+    max-width: 700px;
+
+    margin-bottom: 13px;
+
+    color: var(--muted);
+
+    font-size: 15px;
+
+    line-height: 1.7;
+}
+
+
+.friend-description strong {
+    color: var(--text);
+}
+
+
+.friend-question {
+    color: var(--accent) !important;
+
+    font-weight: 700;
+
+    font-size: 18px !important;
+}
+
+
+
+/* =====================================================
+   我的标签
+===================================================== */
+
+.friend-tags {
+    display: flex;
+
+    flex-wrap: wrap;
+
+    gap: 8px;
+
+    margin-top: 22px;
+}
+
+
+.friend-tags span {
+    padding:
+        6px 11px;
+
+    border:
+        1px solid var(--border);
+
+    border-radius: 8px;
+
+    background:
+        var(--card);
+
+    color:
+        var(--accent);
+
+    font-size: 12px;
+}
+
+
+
+/* =====================================================
+   Friend Database
+===================================================== */
+
+.friends-database-title {
+    display: flex;
+
+    align-items: center;
+
+    gap: 10px;
+
+    margin-bottom: 8px;
+
+    font-size: 25px;
+
+    font-weight: 800;
+}
+
+
+.friends-database-title span {
+    font-size: 28px;
+}
+
+
+.friends-database-description {
+    margin-bottom: 30px;
+
+    color: var(--muted);
+
+    font-size: 14px;
+}
+
+
+
+/* =====================================================
+   朋友网格
+===================================================== */
+
+.friends-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(2, minmax(0, 1fr));
+
+    gap: 20px;
+}
+
+
+
+/* =====================================================
+   朋友卡片
+===================================================== */
+
+.friend-card {
+    min-height: 150px;
+
+    display: flex;
+
+    align-items: flex-start;
+
+    gap: 17px;
+
+    padding: 22px;
+
+    border:
+        1px solid var(--border);
+
+    border-radius: 16px;
+
+    background:
+        var(--card);
+
+    backdrop-filter:
+        blur(12px);
+
+    -webkit-backdrop-filter:
+        blur(12px);
+
+    transition:
+        transform 0.25s ease,
+        background 0.25s ease,
+        border-color 0.25s ease;
+
+    text-decoration: none;
+
+    color: inherit;
+}
+
+
+.friend-card:hover {
+    transform:
+        translateY(-6px);
+
+    background:
+        var(--card-hover);
+
+    border-color:
+        rgba(155, 108, 255, 0.5);
+}
+
+
+
+/* =====================================================
+   朋友头像
+===================================================== */
+
+.friend-icon {
+    width: 75px;
+    height: 75px;
+
+    flex-shrink: 0;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    overflow: hidden;
+
+    border-radius: 16px;
+
+    border:
+        1px solid var(--border);
+
+    background:
+        rgba(155, 108, 255, 0.12);
+}
+
+
+.friend-icon img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    display: block;
+}
+
+
+
+/* =====================================================
+   朋友信息
+===================================================== */
+
+.friend-info {
+    min-width: 0;
+
+    flex: 1;
+}
+
+
+.friend-info h3 {
+    margin: 0;
+
+    font-size: 18px;
+
+    line-height: 1.3;
+}
+
+
+.friend-info p {
+    margin:
+        5px 0 0;
+
+    color:
+        var(--muted);
+
+    font-size: 13px;
+
+    line-height: 1.6;
+}
+
+
+.friend-info small {
+    display: block;
+
+    margin-top: 4px;
+
+    color:
+        var(--muted);
+
+    opacity: 0.65;
+
+    font-size: 11px;
+}
+
+
+
+/* =====================================================
+   朋友链接
+===================================================== */
+
+.friend-links {
+    display: flex;
+
+    flex-wrap: wrap;
+
+    gap: 8px;
+
+    margin-top: 12px;
+}
+
+
+.friend-links a {
+    display: inline-flex;
+
+    align-items: center;
+
+    padding:
+        6px 10px;
+
+    border:
+        1px solid var(--border);
+
+    border-radius: 8px;
+
+    background:
+        rgba(155, 108, 255, 0.08);
+
+    color:
+        var(--accent);
+
+    text-decoration: none;
+
+    font-size: 11px;
+
+    transition:
+        transform 0.2s ease,
+        background 0.2s ease,
+        border-color 0.2s ease;
+}
+
+
+.friend-links a:hover {
+    transform:
+        translateY(-2px);
+
+    background:
+        rgba(155, 108, 255, 0.16);
+
+    border-color:
+        rgba(155, 108, 255, 0.5);
+}
+
+
+
+/* =====================================================
+   手机端
+===================================================== */
+
+@media (max-width: 800px) {
+
+    .friends-page {
+        padding-top: 110px;
+    }
+
+
+    .friend-introduction {
+
+        grid-template-columns: 1fr;
+
+        gap: 25px;
+
+        align-items: start;
+
+    }
+
+
+    .friend-avatar {
+
+        width: 180px;
+
+        height: 180px;
+
+        margin: 0 auto;
+
+    }
+
+
+    .friend-description {
+
+        text-align: center;
+
+    }
+
+
+    .friend-description p {
+
+        margin-left: auto;
+
+        margin-right: auto;
+
+    }
+
+
+    .friend-tags {
+
+        justify-content: center;
+
+    }
+
+
+    .friends-grid {
+
+        grid-template-columns: 1fr;
+
+    }
+
+}
+
+
+
+/* =====================================================
+   小手机
+===================================================== */
+
+@media (max-width: 500px) {
+
+    .friend-avatar {
+
+        width: 150px;
+
+        height: 150px;
+
+    }
+
+
+    .friend-description h1 {
+
+        font-size: 38px;
+
+    }
+
+
+    .friend-card {
+
+        padding: 18px;
+
+    }
+
+
+    .friend-icon {
+
+        width: 60px;
+
+        height: 60px;
+
+        border-radius: 13px;
+
+    }
+
+
+    .friend-info h3 {
+
+        font-size: 17px;
+
+    }
+
+}
 
 
 
