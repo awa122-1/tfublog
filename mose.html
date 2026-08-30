@@ -1,0 +1,947 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>解密 | 芙酱awa</title>
+
+    <meta
+        name="description"
+        content="芙酱awa 的 .mscd Base64 解密工具"
+    >
+
+    <link
+        rel="stylesheet"
+        href="style.css"
+    >
+
+</head>
+
+
+<body>
+
+
+<!-- =====================================================
+     背景
+===================================================== -->
+
+<div class="background">
+
+    <div class="background-image"></div>
+
+    <div class="background-overlay"></div>
+
+    <div class="background-glow glow-1"></div>
+
+    <div class="background-glow glow-2"></div>
+
+</div>
+
+
+
+<!-- =====================================================
+     导航栏
+===================================================== -->
+
+<header class="navbar">
+
+    <div class="nav-container">
+
+
+        <!-- Logo -->
+
+        <a
+            href="index.html"
+            class="logo"
+        >
+
+            <span>&lt;</span>
+
+            芙酱awa
+
+            <span>/&gt;</span>
+
+        </a>
+
+
+
+        <!-- 导航 -->
+
+        <nav id="nav-menu">
+
+            <a href="index.html">
+                首页
+            </a>
+
+            <a href="index.html#about">
+                关于我
+            </a>
+
+            <a href="projects.html">
+                项目
+            </a>
+
+            <a href="friends.html">
+                朋友们
+            </a>
+
+            <a href="index.html#skills">
+                没技能
+            </a>
+
+            <a href="index.html#contact">
+                别联系我
+            </a>
+
+        </nav>
+
+
+
+        <!-- 导航按钮 -->
+
+        <div class="nav-actions">
+
+            <button
+                id="theme-toggle"
+                aria-label="切换主题"
+                title="切换到浅色模式"
+            >
+                ☀️
+            </button>
+
+
+            <button
+                id="menu-toggle"
+                aria-label="打开菜单"
+            >
+                ☰
+            </button>
+
+        </div>
+
+    </div>
+
+</header>
+
+
+
+<!-- =====================================================
+     主内容
+===================================================== -->
+
+<main class="page-main">
+
+
+    <section class="section decrypt-page">
+
+
+        <!-- =================================================
+             页面标题
+        ================================================== -->
+
+        <div class="section-title">
+
+            <span>
+                01.
+            </span>
+
+            解密
+
+        </div>
+
+
+
+        <!-- =================================================
+             解密容器
+        ================================================== -->
+
+        <div class="decrypt-container">
+
+
+            <!-- =================================================
+                 上传区域
+            ================================================== -->
+
+            <div class="decrypt-card">
+
+
+                <div class="decrypt-card-title">
+
+                    🔐 Base64 解密
+
+                </div>
+
+
+
+                <p class="decrypt-description">
+
+                    上传一个
+                    <strong>.mscd</strong>
+                    文件，网站会自动读取并进行 Base64 解码。
+
+                    <br>
+
+                    文件中的
+                    <strong>/h</strong>
+                    会自动转换成换行。
+
+                    <br>
+
+                    如果发现 Bilibili UID，
+                    会自动生成可以点击的链接。
+
+                </p>
+
+
+
+                <!-- =================================================
+                     上传
+                ================================================== -->
+
+                <label
+                    for="mscd-file"
+                    class="msc-upload"
+                >
+
+
+                    <div class="msc-upload-icon">
+                        📁
+                    </div>
+
+
+                    <div class="msc-upload-title">
+                        点击上传 .mscd 文件
+                    </div>
+
+
+                    <div class="msc-upload-hint">
+                        支持本地 .mscd 文件
+                    </div>
+
+
+                    <input
+                        type="file"
+                        id="mscd-file"
+                        accept=".mscd"
+                    >
+
+
+                </label>
+
+
+
+                <!-- 文件名 -->
+
+                <div
+                    id="file-name"
+                    class="mscd-file-name"
+                ></div>
+
+
+
+                <!-- 错误 -->
+
+                <div
+                    id="error-message"
+                    class="decrypt-error"
+                ></div>
+
+
+            </div>
+
+
+
+            <!-- =================================================
+                 解密结果
+            ================================================== -->
+
+            <div
+                id="result-box"
+                class="decrypt-card decrypt-result"
+            >
+
+
+                <div class="decrypt-card-title">
+
+                    🔓 解密结果
+
+                </div>
+
+
+
+                <!-- 输出 -->
+
+                <div
+                    id="result-content"
+                    class="decrypt-output"
+                ></div>
+
+
+
+                <!-- =================================================
+                     Bilibili
+                ================================================== -->
+
+                <div
+                    id="bilibili-results"
+                    class="bilibili-results"
+                >
+
+
+                    <div class="bilibili-title">
+
+                        🔗 Bilibili
+
+                    </div>
+
+
+
+                    <div
+                        id="bilibili-list"
+                        class="bilibili-list"
+                    ></div>
+
+
+                </div>
+
+
+            </div>
+
+
+        </div>
+
+
+    </section>
+
+
+</main>
+
+
+
+<!-- =====================================================
+     Footer
+===================================================== -->
+
+<footer>
+
+
+    <p>
+
+        Designed &amp; Built by
+
+        <a
+            href="https://space.bilibili.com/1682798870"
+            target="_blank"
+            rel="noopener noreferrer"
+        >
+            芙酱awa
+        </a>
+
+    </p>
+
+
+
+    <p class="copyright">
+
+        © 2026 芙酱awa
+
+        ·
+
+        Made with HTML, CSS &amp; JavaScript
+
+    </p>
+
+
+</footer>
+
+
+
+<!-- =====================================================
+     返回顶部
+===================================================== -->
+
+<button
+    id="back-top"
+    aria-label="返回顶部"
+>
+
+    ↑
+
+</button>
+
+
+
+<!-- =====================================================
+     JavaScript
+===================================================== -->
+
+<script src="script.js"></script>
+
+
+<script>
+
+/* =====================================================
+   Base64 解密
+===================================================== */
+
+function decodeBase64(text) {
+
+    try {
+
+        /*
+         * 删除 Base64 中可能存在的空格、
+         * 换行和回车。
+         */
+
+        const cleanText =
+            text.replace(/\s/g, "");
+
+
+        /*
+         * Base64 → 二进制
+         */
+
+        const binary =
+            atob(cleanText);
+
+
+        /*
+         * 二进制 → Uint8Array
+         */
+
+        const bytes =
+            Uint8Array.from(
+                binary,
+                function (char) {
+
+                    return char.charCodeAt(0);
+
+                }
+            );
+
+
+        /*
+         * Uint8Array → UTF-8
+         */
+
+        const decoder =
+            new TextDecoder("utf-8");
+
+
+        let decoded =
+            decoder.decode(bytes);
+
+
+        /*
+         * /h = 换行
+         */
+
+        decoded =
+            decoded.replace(
+                /\/h/g,
+                "\n"
+            );
+
+
+        return decoded;
+
+
+    } catch (error) {
+
+        throw new Error(
+            "Base64 解码失败，请检查 .mscd 文件内容。"
+        );
+
+    }
+
+}
+
+
+
+/* =====================================================
+   查找 Bilibili UID
+===================================================== */
+
+function findBilibiliLinks(text) {
+
+    const results = [];
+
+
+    /*
+     * 匹配完整 Bilibili URL
+     *
+     * 例如：
+     *
+     * https://space.bilibili.com/1682798870
+     */
+
+    const urlRegex =
+        /https?:\/\/(?:www\.)?space\.bilibili\.com\/(\d+)/gi;
+
+
+    let match;
+
+
+    while (
+        (match = urlRegex.exec(text)) !== null
+    ) {
+
+        results.push(
+            match[1]
+        );
+
+    }
+
+
+
+    /*
+     * 如果没有找到完整 URL，
+     * 再寻找纯数字 UID。
+     */
+
+    if (results.length === 0) {
+
+
+        const uidRegex =
+            /\b\d{6,20}\b/g;
+
+
+        const matches =
+            text.match(uidRegex);
+
+
+        if (matches) {
+
+
+            matches.forEach(
+                function (uid) {
+
+                    results.push(uid);
+
+                }
+            );
+
+
+        }
+
+    }
+
+
+
+    /*
+     * 删除重复 UID
+     */
+
+    return [
+        ...new Set(results)
+    ];
+
+}
+
+
+
+/* =====================================================
+   显示 Bilibili 链接
+===================================================== */
+
+function showBilibiliLinks(text) {
+
+
+    const results =
+        document.getElementById(
+            "bilibili-results"
+        );
+
+
+    const list =
+        document.getElementById(
+            "bilibili-list"
+        );
+
+
+    const uids =
+        findBilibiliLinks(text);
+
+
+    /*
+     * 清空旧结果
+     */
+
+    list.innerHTML = "";
+
+
+
+    /*
+     * 没找到 UID
+     */
+
+    if (uids.length === 0) {
+
+        results.style.display =
+            "none";
+
+        return;
+
+    }
+
+
+
+    /*
+     * 显示 Bilibili 区域
+     */
+
+    results.style.display =
+        "block";
+
+
+
+    /*
+     * 创建每一个链接
+     */
+
+    uids.forEach(
+        function (uid) {
+
+
+            const link =
+                document.createElement(
+                    "a"
+                );
+
+
+            /*
+             * 正确的 Bilibili URL
+             */
+
+            link.href =
+                "https://space.bilibili.com/" +
+                uid;
+
+
+            link.target =
+                "_blank";
+
+
+            link.rel =
+                "noopener noreferrer";
+
+
+            link.className =
+                "bilibili-link";
+
+
+
+            /*
+             * 链接内容
+             */
+
+            link.innerHTML = `
+
+                <div>
+
+                    <strong>
+                        Bilibili UID：${uid}
+                    </strong>
+
+                    <small>
+                        space.bilibili.com/${uid}
+                    </small>
+
+                </div>
+
+                <span>
+                    ↗
+                </span>
+
+            `;
+
+
+
+            list.appendChild(
+                link
+            );
+
+
+        }
+    );
+
+}
+
+
+
+/* =====================================================
+   文件上传
+===================================================== */
+
+const fileInput =
+    document.getElementById(
+        "mscd-file"
+    );
+
+
+
+if (fileInput) {
+
+
+    fileInput.addEventListener(
+        "change",
+        function (event) {
+
+
+            /*
+             * 获取文件
+             */
+
+            const file =
+                event.target.files[0];
+
+
+            if (!file) {
+
+                return;
+
+            }
+
+
+
+            /*
+             * 获取页面元素
+             */
+
+            const fileName =
+                document.getElementById(
+                    "file-name"
+                );
+
+
+            const resultBox =
+                document.getElementById(
+                    "result-box"
+                );
+
+
+            const resultContent =
+                document.getElementById(
+                    "result-content"
+                );
+
+
+            const error =
+                document.getElementById(
+                    "error-message"
+                );
+
+
+
+            /*
+             * 清除之前的错误
+             */
+
+            error.textContent =
+                "";
+
+            error.classList.remove(
+                "show"
+            );
+
+
+
+            /*
+             * 清除旧结果
+             */
+
+            resultContent.textContent =
+                "";
+
+            resultBox.classList.remove(
+                "show"
+            );
+
+
+
+            /*
+             * 隐藏旧的 Bilibili
+             */
+
+            document.getElementById(
+                "bilibili-results"
+            ).style.display =
+                "none";
+
+
+
+            /*
+             * 检查文件扩展名
+             */
+
+            if (
+                !file.name
+                    .toLowerCase()
+                    .endsWith(".mscd")
+            ) {
+
+
+                error.textContent =
+                    "请选择 .mscd 文件。";
+
+
+                error.classList.add(
+                    "show"
+                );
+
+
+                return;
+
+            }
+
+
+
+            /*
+             * 显示文件名
+             */
+
+            fileName.textContent =
+                "已选择：" +
+                file.name;
+
+
+
+            /*
+             * 创建 FileReader
+             */
+
+            const reader =
+                new FileReader();
+
+
+
+            /*
+             * 文件读取完成
+             */
+
+            reader.onload =
+                function (e) {
+
+
+                    try {
+
+
+                        /*
+                         * 原始文件内容
+                         */
+
+                        const originalText =
+                            e.target.result;
+
+
+
+                        /*
+                         * Base64 解密
+                         */
+
+                        const decoded =
+                            decodeBase64(
+                                originalText
+                            );
+
+
+
+                        /*
+                         * 显示解密结果
+                         */
+
+                        resultContent.textContent =
+                            decoded;
+
+
+
+                        /*
+                         * 显示结果卡片
+                         */
+
+                        resultBox.classList.add(
+                            "show"
+                        );
+
+
+
+                        /*
+                         * 自动寻找 Bilibili
+                         */
+
+                        showBilibiliLinks(
+                            decoded
+                        );
+
+
+                    } catch (decodeError) {
+
+
+                        /*
+                         * 解码失败
+                         */
+
+                        error.textContent =
+                            decodeError.message;
+
+
+                        error.classList.add(
+                            "show"
+                        );
+
+
+                    }
+
+                };
+
+
+
+            /*
+             * 文件读取失败
+             */
+
+            reader.onerror =
+                function () {
+
+
+                    error.textContent =
+                        "无法读取文件。";
+
+
+                    error.classList.add(
+                        "show"
+                    );
+
+
+                };
+
+
+
+            /*
+             * 按 UTF-8 读取
+             */
+
+            reader.readAsText(
+                file,
+                "UTF-8"
+            );
+
+
+        }
+    );
+
+}
+
+</script>
+
+
+</body>
+
+</html>

@@ -3458,6 +3458,238 @@ footer a:hover {
     }
 
 }
+/* =====================================================
+解密页面
+===================================================== */
+
+.decrypt-page {
+padding-top: 140px;
+}
+
+.decrypt-container {
+width: 100%;
+max-width: 850px;
+margin: 0 auto;
+}
+
+.decrypt-card {
+padding: 28px;
+border: 1px solid var(--border);
+border-radius: 18px;
+background: var(--card);
+backdrop-filter: blur(12px);
+-webkit-backdrop-filter: blur(12px);
+box-shadow: 0 20px 60px rgba(0, 0, 0, 0.18);
+}
+
+.decrypt-card-title {
+font-size: 25px;
+font-weight: 800;
+margin-bottom: 10px;
+}
+
+.decrypt-description {
+color: var(--muted);
+line-height: 1.8;
+font-size: 14px;
+margin-bottom: 25px;
+}
+
+.decrypt-description strong {
+color: var(--accent);
+}
+
+/* =====================================================
+文件上传
+===================================================== */
+
+.msc-upload {
+position: relative;
+display: block;
+padding: 40px 20px;
+text-align: center;
+border: 2px dashed var(--border);
+border-radius: 15px;
+cursor: pointer;
+transition:
+border-color 0.25s ease,
+background 0.25s ease;
+}
+
+.msc-upload:hover {
+border-color: var(--accent);
+background: rgba(155, 108, 255, 0.06);
+}
+
+.msc-upload input {
+position: absolute;
+width: 1px;
+height: 1px;
+opacity: 0;
+}
+
+.msc-upload-icon {
+font-size: 42px;
+margin-bottom: 10px;
+}
+
+.msc-upload-title {
+font-size: 17px;
+font-weight: 700;
+}
+
+.msc-upload-hint {
+margin-top: 6px;
+color: var(--muted);
+font-size: 12px;
+}
+
+.msc-file-name {
+margin-top: 12px;
+color: var(--accent);
+font-size: 13px;
+text-align: center;
+}
+
+/* =====================================================
+错误提示
+===================================================== */
+
+.decrypt-error {
+display: none;
+margin-top: 15px;
+padding: 12px 15px;
+border-radius: 10px;
+background: rgba(255, 80, 80, 0.08);
+color: #ff6b6b;
+font-size: 13px;
+}
+
+.decrypt-error.show {
+display: block;
+}
+
+/* =====================================================
+解密结果
+===================================================== */
+
+.decrypt-result {
+display: none;
+margin-top: 20px;
+}
+
+.decrypt-result.show {
+display: block;
+}
+
+.decrypt-output {
+padding: 18px;
+border: 1px solid var(--border);
+border-radius: 12px;
+background: rgba(0, 0, 0, 0.08);
+white-space: pre-wrap;
+word-break: break-word;
+line-height: 1.7;
+font-family: Consolas, "Microsoft YaHei", monospace;
+font-size: 14px;
+}
+
+/* =====================================================
+Bilibili 结果
+===================================================== */
+
+.bilibili-results {
+display: none;
+margin-top: 25px;
+}
+
+.bilibili-title {
+font-size: 19px;
+font-weight: 800;
+margin-bottom: 12px;
+}
+
+.bilibili-list {
+display: flex;
+flex-direction: column;
+gap: 10px;
+}
+
+.bilibili-link {
+display: flex;
+align-items: center;
+justify-content: space-between;
+gap: 15px;
+
+padding: 14px 16px;
+
+border: 1px solid var(--border);
+border-radius: 12px;
+
+background: var(--card);
+color: inherit;
+
+text-decoration: none;
+
+transition:
+    transform 0.2s ease,
+    border-color 0.2s ease,
+    background 0.2s ease;
+
+}
+
+.bilibili-link:hover {
+transform: translateY(-3px);
+border-color: rgba(155, 108, 255, 0.5);
+background: var(--card-hover);
+}
+
+.bilibili-link strong {
+display: block;
+color: var(--accent);
+font-size: 14px;
+}
+
+.bilibili-link small {
+display: block;
+margin-top: 3px;
+color: var(--muted);
+font-size: 11px;
+}
+
+.bilibili-link > span {
+color: var(--muted);
+font-size: 20px;
+flex-shrink: 0;
+}
+
+/* =====================================================
+手机端
+===================================================== */
+
+@media (max-width: 800px) {
+
+.decrypt-page {
+    padding-top: 110px;
+}
+
+.decrypt-card {
+    padding: 20px;
+}
+
+}
+
+@media (max-width: 500px) {
+
+.decrypt-card-title {
+    font-size: 22px;
+}
+
+.msc-upload {
+    padding: 32px 15px;
+}
+
+}
 
 
 
