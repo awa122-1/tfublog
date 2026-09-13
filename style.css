@@ -299,26 +299,53 @@ nav a.active {
 }
 
 
-nav a.active::after {
+/* =====================================================
+   导航栏下划线过渡
+===================================================== */
 
+nav a {
+    position: relative;
+    color: var(--muted);
+    font-size: 13px;
+    transition:
+        color 0.25s ease;
+}
+
+nav a:hover,
+nav a.active {
+    color: var(--text);
+}
+
+
+/* 默认没有横线 */
+
+nav a::after {
     content: "";
 
     position: absolute;
 
-    left: 0;
-
-    right: 0;
-
+    left: 50%;
     bottom: -8px;
 
+    width: 0;
     height: 2px;
 
     border-radius: 2px;
 
-    background:
-        var(--accent);
+    background: var(--accent);
+
+    transform: translateX(-50%);
+
+    transition:
+        width 0.35s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+
+/* 当前页面 */
+
+nav a.active::after {
+    width: 100%;
+}
 
 .nav-actions {
 
@@ -3690,7 +3717,313 @@ flex-shrink: 0;
 }
 
 }
+/* =========================
+           Friends Main
+           ========================= */
 
+.friends-main-page {
+     min-height: 100vh;
+     padding: 120px 20px 60px;
+ }
+
+.friends-main-container {
+      width: 100%;
+      max-width: 1100px;
+      margin: 0 auto;
+}
+
+        /* 顶部标题 */
+        .friends-main-header {
+            text-align: center;
+            margin-bottom: 45px;
+        }
+
+        .friends-main-header h1 {
+            margin: 0 0 12px;
+            font-size: 38px;
+            font-weight: 800;
+        }
+
+        .friends-main-header p {
+            margin: 0;
+            color: var(--muted);
+            font-size: 15px;
+        }
+
+        /* 快捷操作 */
+        .friends-main-actions {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 12px;
+            margin-bottom: 45px;
+        }
+
+        .friends-main-button {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+
+            min-width: 150px;
+            padding: 12px 20px;
+
+            border: 1px solid var(--border);
+            border-radius: 12px;
+
+            background: var(--card);
+            color: var(--text);
+
+            text-decoration: none;
+            font-size: 14px;
+
+            transition:
+                transform 0.25s ease,
+                border-color 0.25s ease,
+                background 0.25s ease;
+        }
+
+        .friends-main-button:hover {
+            transform: translateY(-3px);
+            border-color: var(--accent);
+            background: var(--card-hover);
+        }
+
+        .friends-main-button.primary {
+            border-color: var(--accent);
+            background: var(--accent);
+            color: white;
+        }
+
+        .friends-main-button.primary:hover {
+            filter: brightness(1.08);
+        }
+
+        /* 管理区域 */
+        .friends-manager {
+            margin-bottom: 50px;
+        }
+
+        .friends-manager-title {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 15px;
+
+            margin-bottom: 18px;
+        }
+
+        .friends-manager-title h2 {
+            margin: 0;
+            font-size: 22px;
+        }
+
+        .friends-manager-title span {
+            color: var(--muted);
+            font-size: 13px;
+        }
+
+        /* 朋友列表 */
+        .friends-main-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 18px;
+        }
+
+        .friends-main-card {
+            position: relative;
+
+            display: flex;
+            align-items: center;
+            gap: 15px;
+
+            padding: 18px;
+
+            border: 1px solid var(--border);
+            border-radius: 16px;
+
+            background: var(--card);
+
+            text-decoration: none;
+            color: var(--text);
+
+            transition:
+                transform 0.25s ease,
+                border-color 0.25s ease,
+                box-shadow 0.25s ease;
+        }
+
+        .friends-main-card:hover {
+            transform: translateY(-5px);
+            border-color: var(--accent);
+            box-shadow: 0 12px 30px rgba(0, 0, 0, 0.12);
+        }
+
+        .friends-main-avatar {
+            width: 64px;
+            height: 64px;
+
+            flex-shrink: 0;
+
+            border-radius: 14px;
+
+            object-fit: cover;
+
+            background: var(--card-hover);
+
+            border: 1px solid var(--border);
+        }
+
+        .friends-main-info {
+            min-width: 0;
+            flex: 1;
+        }
+
+        .friends-main-name {
+            margin: 0 0 5px;
+
+            font-size: 16px;
+            font-weight: 700;
+
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
+        .friends-main-description {
+            margin: 0;
+
+            color: var(--muted);
+
+            font-size: 13px;
+            line-height: 1.5;
+
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
+        .friends-main-arrow {
+            color: var(--muted);
+            font-size: 20px;
+
+            transition:
+                transform 0.25s ease,
+                color 0.25s ease;
+        }
+
+        .friends-main-card:hover .friends-main-arrow {
+            transform: translateX(4px);
+            color: var(--accent);
+        }
+
+        /* 添加朋友 */
+        .friends-add-card {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            min-height: 102px;
+
+            border: 1px dashed var(--border);
+            border-radius: 16px;
+
+            color: var(--muted);
+
+            text-decoration: none;
+
+            transition:
+                border-color 0.25s ease,
+                color 0.25s ease,
+                background 0.25s ease;
+        }
+
+        .friends-add-card:hover {
+            border-color: var(--accent);
+            color: var(--accent);
+            background: var(--card);
+        }
+
+        .friends-add-content {
+            text-align: center;
+        }
+
+        .friends-add-icon {
+            display: block;
+            margin-bottom: 5px;
+            font-size: 25px;
+        }
+
+        .friends-add-text {
+            font-size: 13px;
+        }
+
+        /* 提示 */
+        .friends-main-note {
+            padding: 20px;
+
+            border: 1px solid var(--border);
+            border-radius: 16px;
+
+            background: var(--card);
+
+            color: var(--muted);
+
+            font-size: 13px;
+            line-height: 1.7;
+        }
+
+        .friends-main-note strong {
+            color: var(--text);
+        }
+
+        /* 页脚 */
+        .friends-main-footer {
+            margin-top: 60px;
+
+            text-align: center;
+
+            color: var(--muted);
+            font-size: 12px;
+        }
+
+        /* =========================
+           Mobile
+           ========================= */
+
+        @media (max-width: 850px) {
+            .friends-main-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (max-width: 600px) {
+            .friends-main-page {
+                padding: 100px 15px 40px;
+            }
+
+            .friends-main-header h1 {
+                font-size: 30px;
+            }
+
+            .friends-main-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .friends-manager-title {
+                align-items: flex-start;
+                flex-direction: column;
+                gap: 5px;
+            }
+
+            .friends-main-actions {
+                flex-direction: column;
+            }
+
+            .friends-main-button {
+                width: 100%;
+            }
+        }
 
 
 

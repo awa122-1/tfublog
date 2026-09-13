@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>朋友| 芙酱awa</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        
+    </style>
+</head>
+
+<div class="background">
+
+    <div class="background-image"></div>
+
+    <div class="background-overlay"></div>
+
+    <div class="background-glow glow-1"></div>
+
+    <div class="background-glow glow-2"></div>
+
+</div>
+
+
+
+<body>
+
+    <!-- =========================
+         导航栏
+         ========================= -->
+    <header>
+       <header class="navbar">
+
+    <div class="nav-container">
+
+        <!-- Logo -->
+
+        <a
+            href="index.html"
+            class="logo"
+        >
+            <span>&lt;</span>
+            芙酱awa
+            <span>/&gt;</span>
+        </a>
+
+
+            <nav>
+                <a href="index.html">
+                    首页
+                </a>
+
+                <a href="index.html#about">
+                    关于我
+                </a>
+
+                <a href="friends.main.html">
+                    友链
+                </a>
+
+                <a href="projects.html">
+                    项目
+                </a>
+
+                <a href="index.html#skills">
+                    没技能
+                </a>
+
+                <a href="index.html#interests">
+                    兴趣
+                </a>
+
+                <a href="index.html#contact">
+                    别联系我
+                </a>
+            </nav>
+
+        </div>
+    </header>
+
+
+    <!-- =========================
+         主内容
+         ========================= -->
+    <main class="friends-main-page">
+
+        <div class="friends-main-container">
+
+            <!-- 标题 -->
+            <section class="friends">
+
+                <h1>👥 朋友们</h1>
+
+            </section>
+
+
+            <!-- 快捷按钮 -->
+            <section class="friends-main-actions">
+
+                <a
+                    href="friends.main.html"
+                    class="friends-main-button primary"
+                >
+                    👥 查看朋友们
+                </a>
+
+                <a
+                    href="index.html"
+                    class="friends-main-button"
+                >
+                    🏠 返回首页
+                </a>
+
+            </section>
+
+
+            <!-- 朋友页面 -->
+            <section class="friends-manager">
+
+                <div class="friends-manager-title">
+
+                    <h2>朋友页面</h2>
+
+                    <span>
+                        当前朋友页面
+                    </span>
+
+                </div>
+
+
+                <div class="friends-main-grid">
+
+
+                    <!-- 朋友 1 -->
+                    <a
+                        href="friends.html"
+                        class="friends-main-card"
+                    >
+
+                        <img
+                            src="people-awa.webp"
+                            alt="這是名字awa"
+                            class="friends-main-avatar"
+                        >
+
+                        <div class="friends-main-info">
+
+                            <h3 class="friends-main-name">
+                                這是名字awa
+                            </h3>
+
+                            <p class="friends-main-description">
+                                另一个神秘的朋友
+                            </p>
+
+                        </div>
+
+                        <span class="friends-main-arrow">
+                            →
+                        </span>
+
+                    </a>
+
+                    <a
+                        href="friends2.html"
+                        class="friends-main-card"
+                    >
+
+                        <img
+                            src="oi-awa.webp"
+                            alt="oi-awa"
+                            class="friends-main-avatar"
+                        >
+
+                        <div class="friends-main-info">
+
+                            <h3 class="friends-main-name">
+                                oi-awa
+                            </h3>
+
+                            <p class="friends-main-description">
+                                另一个神秘的朋友
+                            </p>
+
+                        </div>
+
+                        <span class="friends-main-arrow">
+                            →
+                        </span>
+
+                    </a>
+
+
+                    <!-- 朋友 2 -->
+                    <a
+                        href="tydc.html"
+                        class="friends-main-card"
+                    >
+
+                        <img
+                            src="讨厌断触.webp"
+                            alt="讨厌断触_"
+                            class="friends-main-avatar"
+                        >
+
+                        <div class="friends-main-info">
+
+                            <h3 class="friends-main-name">
+                                讨厌断触_
+                            </h3>
+
+                            <p class="friends-main-description">
+                                另一个神秘的朋友
+                            </p>
+
+                        </div>
+
+                        <span class="friends-main-arrow">
+                            →
+                        </span>
+
+                    </a>
+                    <!-- 添加朋友 -->
+                    <a
+                        href="javascript:void(0)"
+                        class="friends-add-card"
+                        onclick="showAddFriendMessage()"
+                    >
+
+                        <div class="friends-add-content">
+
+                            <span class="friends-add-icon">
+                                ＋
+                            </span>
+
+                            <span class="friends-add-text">
+                                添加新的朋友页面
+                            </span>
+
+                        </div>
+
+                    </a>
+
+
+                </div>
+
+            </section>
+
+
+            <!-- 说明 -->
+            <section class="friends-main-note">
+
+                <strong>💡 关于这个页面</strong>
+
+                <br>
+
+                这里是朋友页面的集中管理入口。
+
+                <br>
+
+                每个朋友都可以拥有自己的 HTML 页面，
+                例如 <strong>tydc.html</strong>、<strong>friends.html</strong> 等。
+
+                <br>
+
+                如果以后需要添加新的朋友，
+                可以复制现有的朋友 HTML 页面，再把这里的卡片链接修改成新的文件。
+
+            </section>
+
+
+            <!-- 页脚 -->
+            <footer class="friends-main-footer">
+
+                © 2026 芙酱awa · Friends Main
+
+            </footer>
+
+        </div>
+
+    </main>
+
+
+    <!-- =========================
+         JS
+         ========================= -->
+    <script src="script.js"></script>
+
+    <script>
+
+        function showAddFriendMessage() {
+
+            alert(
+                "添加朋友页面\n\n" +
+                "目前请手动创建新的 HTML 文件，\n" +
+                "然后在 friends.main.html 中添加一个朋友卡片。"
+            );
+
+        }
+
+    </script>
+
+</body>
+</html>
