@@ -1,4 +1,360 @@
-Proprietary License
+专有许可证（Proprietary License）
+
+版权所有 © 2026 芙酱awa。保留所有权利。
+Copyright © 2026 芙酱awa. All rights reserved.
+
+本仓库及其全部内容均为 芙酱awa 所拥有的专有作品，并受适用的版权及相关法律保护。
+This repository and all of its contents are proprietary works owned by 芙酱awa and are protected by applicable copyright and related laws.
+
+本仓库的源代码公开发布于 GitHub，仅供查看、参考及学习。本仓库的公开访问并不代表版权所有者授予任何复制、修改、再分发、再利用、商业使用或其他形式的许可。
+The source code of this repository is publicly available on GitHub for viewing, reference, and educational purposes only. Public access to this repository does not grant any permission to copy, modify, redistribute, reuse, commercially exploit, or otherwise use its contents.
+
+---
+
+1. 允许的使用方式 / Permitted Use
+
+在遵守本许可证其他条款的前提下，您可以：
+Subject to the other terms of this license, you may:
+
+- 出于个人参考目的查看和阅读本项目的源代码。
+  View and inspect the source code for personal reference.
+
+- 出于个人学习或教育目的研究本项目的代码。
+  Study the code for personal learning or educational purposes.
+
+- 为个人参考或临时实验目的 Fork 本仓库。
+  Fork this repository solely for personal reference or temporary experimentation.
+
+但是，Fork 或查看本仓库不代表您获得重新发布、重新分发或建立衍生项目的权利。
+However, viewing or forking this repository does not grant you the right to publish, redistribute, or create derivative projects from it.
+
+任何 Fork、复制或临时修改都不得：
+Any fork, copy, or temporary modification must not:
+
+- 公开发布；
+  Be publicly published;
+
+- 重新分发；
+  Be redistributed;
+
+- 用作独立项目；
+  Be used as a separate project;
+
+- 用于商业用途；
+  Be used for commercial purposes;
+
+- 删除或修改原有版权声明；
+  Remove or modify the original copyright notices;
+
+- 被声称为申请人或第三方的原创作品。
+  Be claimed as an original work of the user or any third party.
+
+---
+
+2. 禁止的使用方式 / Prohibited Use
+
+除非事先获得版权所有者的明确书面许可，否则您不得：
+Without prior explicit written permission from the copyright holder, you may NOT:
+
+- 复制或再制作本项目的源代码或其中的重要部分；
+  Copy or reproduce the source code or substantial portions of this project;
+
+- 重新分发本项目的源代码或任何部分；
+  Redistribute the source code or any part of this project;
+
+- 将本项目的源代码或任何部分用于其他项目；
+  Reuse the source code or any part of this project in another project;
+
+- 将本项目的代码复制到其他网站、软件、应用程序或项目中；
+  Copy the code into another website, software, application, or project;
+
+- 修改本项目后重新发布；
+  Modify and republish this project;
+
+- 发布本项目的修改版、衍生版或未经修改的副本；
+  Publish modified, derivative, or unmodified copies of this project;
+
+- 将本项目的代码、设计、结构或其他原创内容声称为自己的作品；
+  Claim the code, design, structure, or other original content as your own work;
+
+- 删除、隐藏或修改本项目中的版权声明；
+  Remove, conceal, or modify copyright notices contained within this project;
+
+- 将本项目或其源代码用于商业目的；
+  Use this project or its source code for commercial purposes;
+
+- 出售、出租、再授权或以其他方式从本项目及其内容中获利；
+  Sell, rent, sublicense, or otherwise profit from this project or its contents;
+
+- 将本项目用于任何其他未经授权的公开项目；
+  Use this project in any other unauthorized public project;
+
+- 在未经许可的情况下重新托管或镜像本仓库；
+  Rehost or mirror this repository without permission;
+
+- 在其他仓库、网站或平台重新上传本项目的全部或实质性部分。
+  Re-upload this project, in whole or in substantial part, to another repository, website, or platform.
+
+---
+
+3. 图片及视觉素材 / Images and Visual Assets
+
+本仓库中的所有图片、艺术作品及其他视觉素材均受版权保护。
+All images, artwork, and other visual assets contained in this repository are protected by copyright.
+
+这些素材包括但不限于：
+These assets include, but are not limited to:
+
+- 背景图片 / Background images
+- Artwork / 艺术作品
+- 插画 / Illustrations
+- 图标 / Icons
+- Logo
+- UI 图形 / UI graphics
+- 装饰素材 / Decorative assets
+- 网站图片 / Website images
+- 其他原创视觉素材 / Other original visual assets
+
+未经版权所有者事先明确书面许可，禁止在本项目之外使用、复制、提取、修改、重新分发或公开这些素材。
+Without prior explicit written permission from the copyright holder, you may not use, copy, extract, modify, redistribute, or publicly display these assets outside this project.
+
+允许查看本仓库并不代表您获得使用其中图片或视觉素材的许可。
+Permission to view this repository does not constitute permission to use its images or visual assets.
+
+即使某些图片可以通过浏览器、GitHub 或其他方式公开访问，也不代表这些图片属于公共领域或可以自由使用。
+Even if certain images are publicly accessible through a browser, GitHub, or other means, such accessibility does not mean that the images are in the public domain or freely available for use.
+
+---
+
+4. Pull Request 与贡献 / Pull Requests and Contributions
+
+本仓库的 Pull Request 权限受到限制。
+Pull request access to this repository is restricted.
+
+只有 GitHub 账号 "people-awa" 被授权向本仓库提交 Pull Request。
+Only the GitHub account "people-awa" is authorized to submit pull requests to this repository.
+
+除非获得版权所有者明确授权，其他用户不得提交 Pull Request。
+Other users may not submit pull requests unless explicitly authorized by the copyright holder.
+
+版权所有者保留自行决定以下事项的权利：
+The copyright holder reserves the right to decide at their sole discretion whether to:
+
+- 接受贡献 / Accept contributions;
+- 拒绝贡献 / Reject contributions;
+- 修改贡献 / Modify contributions;
+- 删除贡献 / Remove contributions;
+- 要求贡献者修改提交内容 / Require contributors to modify their submissions.
+
+向本仓库提交代码、图片、设计或其他内容，并不代表版权所有者必须接受该内容。
+Submitting code, images, designs, or other content to this repository does not obligate the copyright holder to accept such content.
+
+---
+
+5. 不授予开源许可证 / No Open-Source License Granted
+
+本项目不是开源软件。
+This project is not open-source software.
+
+除本许可证明确规定的有限权限外，本许可证不授予任何开源许可证所通常提供的权利。
+Except for the limited permissions expressly stated in this license, no rights normally granted by an open-source license are provided.
+
+这包括但不限于：
+This includes, but is not limited to:
+
+- 复制 / Copying
+- 修改 / Modification
+- 分发 / Distribution
+- 发布 / Publication
+- 再授权 / Sublicensing
+- 商业使用 / Commercial use
+- 创建衍生作品 / Creation of derivative works
+- 将代码整合至其他项目 / Integration into other projects
+
+本项目的公开源代码不代表本项目采用 MIT、Apache-2.0、GPL、LGPL、BSD 或其他任何开源许可证。
+The public availability of this source code does not mean that this project is licensed under MIT, Apache-2.0, GPL, LGPL, BSD, or any other open-source license.
+
+如果您希望进行本许可证未明确允许的任何行为，必须事先获得版权所有者的书面许可。
+Any use not expressly permitted by this license requires prior written permission from the copyright holder.
+
+---
+
+6. 版权声明 / Copyright Notice
+
+您不得删除、修改、隐藏、遮挡或以其他方式破坏本项目中包含的版权声明、许可证声明或其他所有权声明。
+You may not remove, modify, conceal, obscure, or otherwise alter copyright notices, license notices, or other ownership notices contained within this project.
+
+任何获得许可的使用，除非版权所有者另有书面说明，都必须保留原有版权及许可证声明。
+Any permitted use must retain the original copyright and license notices unless otherwise stated in writing by the copyright holder.
+
+---
+
+7. 许可申请方式 / Permission Requests
+
+如需进行本许可证未明确允许的任何使用，必须在使用之前获得版权所有者的明确书面许可。
+Any use not expressly permitted by this license requires explicit written permission from the copyright holder before such use.
+
+联系方式 / Contact
+
+GitHub："@gsy222"
+
+如需申请许可，请通过 GitHub 私信联系版权所有者。
+To request permission, please contact the copyright holder via GitHub direct message.
+
+申请内容 / Required Information
+
+为了便于审核，申请人应提供以下信息：
+For review purposes, permission requests should include:
+
+1. 申请人身份 / Applicant Identity
+   
+   - GitHub 用户名 / GitHub username
+   - 其他必要联系方式 / Other relevant contact information
+
+2. 使用内容 / Requested Content
+   
+   - 希望使用的具体代码 / Specific code
+   - 文件名称及路径 / File names and paths
+   - 图片、Artwork、背景图片或其他素材 / Images, artwork, background images, or other assets
+
+3. 使用目的 / Intended Purpose
+   
+   - 个人项目 / Personal project
+   - 学习或教育 / Learning or education
+   - 非商业项目 / Non-commercial project
+   - 商业项目 / Commercial project
+   - 其他用途 / Other purposes
+
+4. 使用方式 / Intended Use
+   
+   - 是否复制 / Whether it will be copied
+   - 是否修改 / Whether it will be modified
+   - 是否重新发布 / Whether it will be republished
+   - 是否公开源代码 / Whether the source code will be made public
+   - 是否重新分发 / Whether it will be redistributed
+
+5. 发布平台 / Distribution Platform
+   
+   - GitHub
+   - 网站 / Website
+   - 应用程序 / Application
+   - 游戏 / Game
+   - 视频 / Video
+   - 社交媒体 / Social media
+   - 其他平台 / Other platforms
+
+6. 商业情况 / Commercial Use
+   
+   - 是否收费 / Whether users will be charged
+   - 是否包含广告 / Whether advertisements are included
+   - 是否用于商业项目 / Whether it is part of a commercial project
+   - 是否会产生其他形式的收入 / Whether other forms of revenue will be generated
+
+7. 使用期限 / Duration of Use
+   
+   - 临时使用 / Temporary
+   - 长期使用 / Long-term
+   - 永久使用 / Permanent
+   - 其他指定期限 / Other specified period
+
+申请标题 / Suggested Request Title
+
+"License Permission Request"
+
+许可生效 / Effective Permission
+
+提交许可申请本身不代表已经获得许可。
+Submitting a permission request does not constitute permission.
+
+只有在版权所有者明确回复并以书面形式同意相关使用后，许可才正式生效。
+Permission becomes effective only after the copyright holder explicitly provides written approval for the requested use.
+
+如果版权所有者没有回复申请，不得视为默认获得许可。
+If the copyright holder does not respond, permission must not be considered granted by default.
+
+在等待审核期间，申请人不得进行申请中所要求的未经授权的使用。
+While a request is pending, the applicant must not perform the requested unauthorized use.
+
+---
+
+8. 许可范围 / Scope of Permission
+
+版权所有者授予的任何许可仅限于书面许可中明确规定的范围。
+Any permission granted by the copyright holder is limited strictly to the scope specified in the written permission.
+
+例如，如果版权所有者仅允许使用某一张图片，则该许可不自动扩展到其他图片、Artwork、源代码、网站设计、其他文件或其他项目。
+For example, if permission is granted for one specific image, such permission does not automatically extend to other images, artwork, source code, website designs, files, or projects.
+
+未经再次授权，不得扩大、转让或重新授权所获得的许可。
+Permission may not be expanded, transferred, or sublicensed without additional authorization.
+
+除非书面许可明确允许，否则获得许可的用户不得将相关内容再次授权给其他人。
+Unless expressly permitted in writing, a person who receives permission may not sublicense the permitted content to another person.
+
+---
+
+9. 许可申请的处理 / Processing of Permission Requests
+
+版权所有者可以自行决定：
+The copyright holder may, at their sole discretion:
+
+- 批准申请 / Approve the request;
+- 附带条件批准申请 / Approve the request subject to conditions;
+- 要求申请人修改使用方式 / Require changes to the proposed use;
+- 限制使用范围 / Limit the scope of use;
+- 限制使用期限 / Limit the duration of use;
+- 拒绝申请 / Reject the request.
+
+版权所有者没有义务批准任何许可申请。
+The copyright holder is under no obligation to approve any permission request.
+
+除非版权所有者明确书面同意，否则任何申请均不构成许可。
+No request constitutes permission unless explicitly approved in writing by the copyright holder.
+
+---
+
+10. 违反许可证 / License Violations
+
+任何未经授权的复制、修改、重新分发、商业使用、素材提取、重新发布或其他违反本许可证的行为，均不属于本许可证授予的权限。
+Any unauthorized copying, modification, redistribution, commercial use, extraction of assets, republication, or other violation of this license is outside the permissions granted by this license.
+
+版权所有者保留根据适用法律采取相应措施及寻求适当法律救济的权利。
+The copyright holder reserves the right to take appropriate action and seek available legal remedies under applicable law.
+
+---
+
+11. 免责声明 / Disclaimer
+
+本项目按现状提供。
+This project is provided on an "as is" basis.
+
+除适用法律另有规定外，版权所有者不对本项目的完整性、准确性、可用性或适用于任何特定用途作出明示或默示保证。
+To the extent permitted by applicable law, the copyright holder makes no express or implied warranties regarding the completeness, accuracy, availability, or fitness of this project for any particular purpose.
+
+使用本项目所产生的风险由使用者自行承担。
+Use of this project is at the user's own risk.
+
+---
+
+12. 最终版权声明 / Final Copyright Statement
+
+版权所有 © 2026 芙酱awa。保留所有权利。
+Copyright © 2026 芙酱awa. All rights reserved.
+
+本项目为专有项目（Proprietary Project）。
+This is a proprietary project.
+
+本项目不授予任何开源许可证。
+No open-source license is granted.
+
+未经版权所有者明确书面许可，禁止复制、修改、重新分发、商业使用、重新发布或在其他项目中使用本项目的代码及受版权保护的素材。
+Without explicit written permission from the copyright holder, copying, modifying, redistributing, commercially using, republishing, or reusing the project's code or copyrighted assets in other projects is prohibited.
+
+---
+
+© 2026 芙酱awa. All rights reserved.
+
+专有项目 · 非开源 / Proprietary Project · Not Open SourceProprietary License
 
 Copyright © 2026 芙酱awa. All rights reserved.
 
@@ -88,3 +444,4 @@ Permission may be granted or denied at the copyright holder's discretion.
 Copyright © 2026 芙酱awa. All rights reserved.
 
 This is proprietary software. No open-source license is granted.
+
