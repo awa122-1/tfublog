@@ -4024,6 +4024,30 @@ flex-shrink: 0;
                 width: 100%;
             }
         }
+/* ICP 备案信息 */
+.footer-icp {
+    margin-top: 15px;
+    padding-top: 12px;
+
+    border-top: 1px solid var(--border);
+
+    /* ICP 上方增加一层柔和阴影 */
+    box-shadow: 0 -8px 20px rgba(0, 0, 0, 0.12);
+}
+
+.footer-icp p {
+    margin: 0;
+}
+
+.footer-icp a {
+    color: var(--accent);
+    text-decoration: none;
+    transition: opacity 0.2s ease;
+}
+
+.footer-icp a:hover {
+    opacity: 0.75;
+}
 
 
 
